@@ -1,0 +1,20 @@
+var personname = "Gana";
+var age = 20;
+var isStudent = true;
+var notSure = 4;
+notSure = "maybe a sting";
+notSure = false;
+var numbers = [1, 2, 3, 4, 5];
+var strings = ["Hello", "world"];
+var tuple = ["age", 20];
+var Color;
+(function (Color) {
+    Color[Color["Red"] = 0] = "Red";
+    Color[Color["Green"] = 1] = "Green";
+    Color[Color["Blue"] = 2] = "Blue";
+})(Color || (Color = {}));
+var myColor = Color.Green;
+var unusable = undefined;
+var nullValue = null;
+console.log("Types Demonstration:");
+console.log({ personname: personname, age: age, isStudent: isStudent, notSure: notSure, numbers: numbers, strings: strings, tuple: tuple, myColor: myColor });
